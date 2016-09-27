@@ -1,0 +1,192 @@
+% ORIENTAÇÕES GERAIS------------------------------------------------------------
+
+
+% SOBRE AS ILUSTRAÇÕES----------------------------------------------------------
+\chapter{SOBRE AS ILUSTRAÇÕES}
+\label{chap:apSobreIlust}
+
+A seguir exemplifica-se como inserir ilustrações no corpo do trabalho. As ilustrações serão indexadas automaticamente em suas respectivas listas. A numeração sequencial de figuras, tabelas e equações também ocorre de modo automático.
+
+Referências cruzadas são obtidas através dos comandos \verb|\label{}| e \verb|\ref{}|. Sendo assim, não é necessário por exemplo, saber que o número de certo capítulo é \ref{chap:fundamentacaoTeorica} para colocar o seu número no texto. Outra forma que pode ser utilizada é esta: \autoref{chap:fundamentacaoTeorica}, facilitando a inserção, remoção e manejo de elementos numerados no texto sem a necessidade de renumerar todos esses elementos.
+
+% FIGURAS-----------------------------------------------------------------------
+\chapter{FIGURAS}
+\label{chap:figuras}
+
+Exemplo de como inserir uma figura. A \autoref{fig:figura-exemplo1} aparece automaticamente na lista de figuras. Para saber mais sobre o uso de imagens no \LaTeX{} consulte literatura especializada \cite{Goossens2007}.
+
+Os arquivos das figuras devem ser armazenados no diretório de "/dados".
+
+\begin{figure}[!htb]
+    \centering
+    \caption{Exemplo de Figura}
+    \includegraphics[width=0.5\textwidth]{./dados/figuras/figura1}
+    \fonte{\citeonline{IRL2014}}
+    \label{fig:figura-exemplo1}
+\end{figure}
+
+% QUADROS E TABELAS---------------------------------------------------------------
+\chapter{QUADROS E TABELAS}
+\label{chap:tabelas}
+
+Exemplo de como inserir o \autoref{qua:quadro-exemplo1} e a \autoref{tab:tabela-exemplo1}. Ambos aparecem automaticamente nas suas respectivas listas. Para saber mais informações sobre a construção de tabelas no \LaTeX{} consulte literatura especializada \cite{Mittelbach2004}.
+
+Ambos os elementos (Quadros e Tabelas) devem ser criados em arquivos separados para facilitar manutenção e armazenados no diretório de "/dados".
+
+\input{./dados/quadros/quadro1}
+
+A diferença entre quadro e tabela está no fato que um quadro é formado por linhas horizontais e verticais. Deve ser utilizado quando o conteúdo é majoritariamente não-numérico. O número do quadro e o título vem acima do quadro, e a fonte, deve vir abaixo. E Uma tabela é formada apenas por linhas verticais. Deve ser utilizada quando o conteúdo é majoritariamente numérico. O número da tabela e o título vem acima da tabela, e a fonte, deve vir abaixo, tal como no quadro.
+
+\input{./dados/tabelas/tabela1}
+
+% EQUAÇÕES-----------------------------------------------------------------------
+\chapter{EQUAÇÕES}
+\label{chap:equacoes}
+
+Exemplo de como inserir a \autoref{eq:equacao-exemplo1} e a Eq. \ref{eq:equacao-exemplo2} no corpo do texto \footnote{Deve-se atentar ao fato de a formatação das equações ficar muito boa esteticamente.}. Observe que foram utilizadas duas formas distintas para referenciar as equações.
+
+\begin{equation}
+    X(s) = \int\limits_{t = -\infty}^{\infty} x(t) \, \text{e}^{-st} \, dt
+    \label{eq:equacao-exemplo1}
+\end{equation}
+
+\begin{equation}
+    F(u, v) = \sum_{m = 0}^{M - 1} \sum_{n = 0}^{N - 1} f(m, n) \exp \left[ -j 2 \pi \left( \frac{u m}{M} + \frac{v n}{N} \right) \right]
+    \label{eq:equacao-exemplo2}
+\end{equation}
+
+% ALGORITMOS-----------------------------------------------------------------------
+\chapter{ALGORITMOS}
+\label{chap:algoritmos}
+
+Exemplo de como inserir um algoritmo. Para inserção de algoritmos utiliza-se o pacote {\ttfamily algorithm2e} que já está devidamente configurado dentro do template.
+
+Os algoritmos devem ser criados em arquivos separados para facilitar manutenção e armazenados no diretório de "/dados".\\
+\\
+
+\input{./dados/algoritmos/algoritmo1}
+
+% SOBRE AS LISTAS--------------------------------------------------------------------
+\chapter{SOBRE AS LISTAS}
+\label{chap:apSobreLista}
+
+Para construir listas de "\textit{bullets}"{} ou listas enumeradas, inclusive listas aninhadas, é utilizado o pacote \verb|paralist|.
+
+Exemplo de duas listas não numeradas aninhadas, utilizando o comando \verb|\itemize|. Observe a indentação, bem como a mudança automática do tipo de "\textit{bullet}"{} nas listas aninhadas.
+
+\begin{itemize}
+    \item item não numerado 1
+    \item item não numerado 2
+    \begin{itemize}
+        \item subitem não numerado 1
+        \item subitem não numerado 2
+        \item subitem não numerado 3
+    \end{itemize}
+    \item item não numerado 3
+\end{itemize}
+
+Exemplo de duas listas numeradas aninhadas, utilizando o comando \verb|\enumerate|. Observe a numeração progressiva e indentação das listas aninhadas.
+
+\begin{enumerate}
+    \item item numerado 1
+    \item item numerado 2
+    \begin{enumerate}
+        \item subitem numerado 1
+        \item subitem numerado 2
+        \item subitem numerado 3
+    \end{enumerate}
+    \item item numerado 3
+\end{enumerate}
+
+% SOBRE AS CITAÇÕES E CHAMADAS DE REFERÊNCAS----------------------------------------------
+\chapter{SOBRE AS CITAÇÕES E CHAMADAS DE REFERÊNCAS}
+\label{chap:apSobreCita}
+
+Citações são trechos de texto ou informações obtidas de materiais consultadss quando da elaboração do trabalho. São utilizadas no texto com o propósito de esclarecer, completar e embasar as ideias do autor. Todas as publicações consultadas e utilizadas (por meio de citações) devem ser listadas, obrigatoriamente, nas referências bibliográficas, para preservar os direitos autorais. São classificadas em citações indiretas e diretas.
+
+% CITAÇÕES INDIRETAS-----------------------------------------------------------------------
+\chapter{CITAÇÕES INDIRETAS}
+\label{chap:citacoesLivres}
+
+É a transcrição, com suas próprias palavras, das idéias de um autor, mantendo-se o sentido original. A citação indireta é a maneira que o pesquisador tem de ler, compreender e gerar conhecimento a partir do conhecimento de outros autores. Quanto à chamada da referência, ela pode ser feita de duas maneiras distintas, conforme o nome do(s) autor(es) façam parte do seu texto ou não. Exemplo de chamada fazendo parte do texto:\\
+\\Enquanto \citeonline{Maturana2003} defendem uma epistemologia baseada na biologia. Para os autores, é necessário rever \ldots.\\
+
+A chamada de referência foi feita com o comando \verb|\citeonline{chave}|, que produzirá a formatação correta.
+
+A segunda forma de fazer uma chamada de referência deve ser utilizada quando se quer evitar uma interrupção na sequência do texto, o que poderia, eventualmente, prejudicar a leitura. Assim, a citação é feita e imediatamente após a obra referenciada deve ser colocada entre parênteses. Porém, neste caso específico, o nome do autor deve vir em caixa alta, seguido do ano da publicação. Exemplo de chamada não fazendo parte do texto:\\
+\\Há defensores da epistemologia baseada na biologia que argumentam em favor da necessidade de \ldots \cite{Maturana2003}.\\
+
+Nesse caso a chamada de referência deve ser feita com o comando \verb|\cite{chave}|, que produzirá a formatação correta.
+
+% CITAÇÕES DIRETAS-----------------------------------------------------------------------
+\chapter{CITAÇÕES DIRETAS}
+\label{chap:citacoesLiterais}
+
+É a transcrição ou cópia de um parágrafo, de uma frase, de parte dela ou de uma expressão, usando exatamente as mesmas palavras adotadas pelo autor do trabalho consultado.
+
+Quanto à chamada da referência, ela pode ser feita de qualquer das duas maneiras já mencionadas nas citações indiretas, conforme o nome do(s) autor(es) façam parte do texto ou não. Há duas maneiras distintas de se fazer uma citação direta, conforme o trecho citado seja longo ou curto.
+
+Quando o trecho citado é longo (4 ou mais linhas) deve-se usar um parágrafo específico para a citação, na forma de um texto recuado (4 cm da margem esquerda), com tamanho de letra menor e espaçamento entrelinhas simples. Exemplo de citação longa:
+\\\begin{citacao}
+    Desse modo, opera-se uma ruptura decisiva entre a reflexividade filosófica, isto é a possibilidade do sujeito de pensar e de refletir, e a objetividade científica. Encontramo-nos num ponto em que o conhecimento científico está sem consciência. Sem consciência moral, sem consciência reflexiva e também subjetiva. Cada vez mais o desenvolvimento extraordinário do conhecimento científico vai tornar menos praticável a própria possibilidade de reflexão do sujeito sobre a sua pesquisa \cite[p.~28]{Silva2000}.
+\end{citacao}
+
+Para fazer a citação longa deve-se utilizar os seguintes comandos:
+\begin{verbatim}
+\begin{citacao}
+<texto da citacao>
+\end{citacao}
+\end{verbatim}
+
+No exemplo acima, para a chamada da referência o comando \verb|\cite[p.~28]{Silva2000}| foi utilizado, visto que os nomes dos autores não são parte do trecho citado. É necessário também indicar o número da página da obra citada que contém o trecho citado.
+
+Quando o trecho citado é curto (3 ou menos linhas) ele deve inserido diretamente no texto entre aspas. Exemplos de citação curta:\\
+\\A epistemologia baseada na biologia parte do princípio de que "assumo que não posso fazer referência a entidades independentes de mim para construir meu explicar" \cite[p.~35]{Maturana2003}.\\
+\\A epistemologia baseada na biologia de \citeonline[p.~35]{Maturana2003} parte do princípio de que "assumo que não posso fazer referência a entidades independentes de mim para construir meu explicar".
+
+% DETALHES SOBRE AS CHAMADAS DE REFERÊNCIAS---------------------------------------------------------
+\chapter{DETALHES SOBRE AS CHAMADAS DE REFERÊNCIAS}
+\label{chap:referUtilizadas}
+
+Outros exemplos de comandos para as chamadas de referências e o resultado produzido por estes:\\
+\\\citeonline{Maturana2003} \ \ \  \verb|\citeonline{Maturana2003}|\\
+\citeonline{Barbosa2004} \ \ \   \verb|\citeonline{Barbosa2004}|\\
+\cite[p.~28]{Silva2000} \ \ \  \verb|\cite[p.~28]{Silva2000}|\\
+\citeonline[p.~33]{Silva2000} \ \ \   \verb|\citeonline[p.~33]{v}|\\
+\cite[p.~35]{Maturana2003} \ \ \   \verb|\cite[p.~35]{Maturana2003}|\\
+\citeonline[p.~35]{Maturana2003} \ \ \   \verb|\citeonline[p.~35]{Maturana2003}|\\
+\cite{Barbosa2004,Maturana2003} \ \ \   \verb|\cite{Barbosa2004,Maturana2003}|\\
+
+% SOBRE AS REFERÊNCIAS BIBLIOGRÁFICAS-------------------------------------------------------
+\chapter{SOBRE AS REFERÊNCIAS BIBLIOGRÁFICAS}
+\label{chap:apSobreRefer}
+
+A bibliografia é feita no padrão \textsc{Bib}\TeX{}. As referências são colocadas em um arquivo separado. Neste template as referências são armazenadas no arquivo "base-referencias.bib".
+
+Existem diversas categorias documentos e materiais componentes da bibliografia. A classe abn\TeX{} define as seguintes categorias (entradas):
+
+\begin{verbatim}
+@book
+@inbook
+@article
+@phdthesis
+@mastersthesis
+@monography
+@techreport
+@manual
+@proceedings
+@inproceedings
+@journalpart
+@booklet
+@patent
+@unpublished
+@misc
+\end{verbatim}
+
+Cada categoria (entrada) é formatada pelo pacote \citeonline{abnTeX22014d} de uma forma específica. Algumas entradas foram introduzidas especificamente para atender à norma \citeonline{NBR6023:2002}, são elas: \verb|@monography|, \verb|@journalpart|,\verb|@patent|. As demais entradas são padrão \textsc{Bib}\TeX{}. Para maiores detalhes, refira-se a \citeonline{abnTeX22014d}, \citeonline{abnTeX22014b}, \citeonline{abnTeX22014c}.
+
+% NOTAS DE RODAPÉ--------------------------------------------------------------------------
+\chapter{NOTAS DE RODAPÉ}
+\label{chap:notasRodape}
+
+As notas de rodapé pode ser classificadas em duas categorias: notas explicativas\footnote{é o tipo mais comum de notas que destacam, explicam e/ou complementam o que foi dito no corpo do texto, como esta nota de rodapé, por exemplo.} e notas de referências. A notas de referências, como o próprio nome ja indica, são utilizadas para colocar referências e/ou chamadas de referências sob certas condições.
