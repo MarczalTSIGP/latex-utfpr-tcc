@@ -4,7 +4,7 @@ Site do Projeto: http://tcc.tsi.gp.utfpr.edu.br/paginas/modelos-latex-da-utfpr
 
 Customização da classe abnTeX2: <https://github.com/abntex/abntex2>
 
-Para instalar a versão mais recente do abnTeX2,siga as instruções em: https://github.com/abntex/abntex2/wiki/InstalacaoLinux
+Para instalar a versão mais recente do abnTeX2, siga as instruções em: https://github.com/abntex/abntex2/wiki/InstalacaoLinux
 
 # Editar
 No arquivo principal "utfpr-tcc.tex" estão todas as inclusões das partes do trabalho, caso não queira inserir algum dos elementos basta excluir a linha que contém o comando \include do arquivo que se deseja excluir.
