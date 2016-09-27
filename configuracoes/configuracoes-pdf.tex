@@ -1,0 +1,31 @@
+% CONFIGURAÇÕES DE APARÊNCIA DO PDF FINAL--------------------------------------
+\makeatletter
+\hypersetup{%
+    portuguese,
+    colorlinks=true,   % true: "links" coloridos; false: "links" em caixas de texto
+    linkcolor=blue,    % Define cor dos "links" internos
+    citecolor=blue,    % Define cor dos "links" para as referências bibliográficas
+    filecolor=blue,    % Define cor dos "links" para arquivos
+    urlcolor=blue,     % Define a cor dos "hiperlinks"
+    breaklinks=true,
+    pdftitle={\@title},
+    pdfauthor={\@author},
+    pdfkeywords={abnt, latex, abntex, abntex2}
+}
+\makeatother
+
+% ALTERA O ASPECTO DA COR AZUL--------------------------------------------------
+\definecolor{blue}{RGB}{41,5,195}
+
+% REDEFINIÇÃO DE LABELS---------------------------------------------------------
+\renewcommand{\algorithmautorefname}{Algoritmo}
+\def\equationautorefname~#1\null{Equa\c c\~ao~(#1)\null}
+
+% CRIA ÍNDICE REMISSIVO---------------------------------------------------------
+\makeindex
+
+% HIFENIZAÇÃO DE PALAVRAS QUE NÃO ESTÃO NO DICIONÁRIO---------------------------
+\hyphenation{%
+    qua-dros-cha-ve
+    Kat-sa-gge-los
+}
