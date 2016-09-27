@@ -1,8 +1,8 @@
 # Template LaTeX para Trabalho de Conclusão de Curso da UTFPR (UTFPR-GP/Curso de TSI) 
 
-Site do Projeto: http://tcc.tsi.gp.utfpr.edu.br/paginas/modelos-latex-da-utfpr
+Site: http://tcc.tsi.gp.utfpr.edu.br/paginas/modelos-latex-da-utfpr
 
-Customização da classe abnTeX2: <https://github.com/abntex/abntex2>
+Customização da classe abnTeX2: https://github.com/abntex/abntex2
 
 Para instalar a versão mais recente do abnTeX2, siga as instruções em: https://github.com/abntex/abntex2/wiki/InstalacaoLinux
 
