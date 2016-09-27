@@ -21,9 +21,11 @@ Caso deseje pode ser utilizado algum software de gestão de referências para ge
 
 # Compilar
 Para compilar o projeto e gerar o documento no formato PDF, execute o seguinte comando dentro do diretório do projeto:
+
 $ make
 
 # Limpar
 Para limpar os arquivos temporários, execute o seguinte comando dentro do diretório do projeto:
+
 $ make clean
 
