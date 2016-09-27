@@ -1,9 +1,9 @@
-#-----------------------------------------------------------------------------
+#----------------------------------------------------------------------------
 # Universidade Tecnológica Federal do Paraná - UTFPR
 # Makefile da Customização da Classe abnTeX2 para as normas da UTFPR
 #
 # Projeto: http://tcc.tsi.gp.utfpr.edu.br/paginas/modelos-latex-da-utfpr
-#------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
 
 # Definindo as variáveis
 
