@@ -1,5 +1,5 @@
 %%-----------------------------------------------------------------------------
-%% The LaTeX Project Public License 
+%% The LaTeX Project Public License
 %%-----------------------------------------------------------------------------
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3
@@ -25,7 +25,7 @@
 %
 %------------------------------------------------------------------------------
 % Codificação: UTF-8
-% LaTeX:  abnTeX2          
+% LaTeX:  abnTeX2
 % -----------------------------------------------------------------------------
 
 \NeedsTeXFormat{LaTeX2e}
@@ -177,8 +177,11 @@
 % Comando que trata a fonte nos objetos flutuantes
 \renewcommand{\fonte}[1]
 {%
+    \vspace{-0.4cm}
     \begin{SingleSpacing}\par\end{SingleSpacing}
-    \centering\small{Fonte: #1}
+    \begin{flushleft}
+      \small{Fonte: #1}
+    \end{flushleft}
 }
 
 % Comando que trata as notas nos objetos flutuantes
@@ -432,3 +435,18 @@
         \end{minipage}
     \end{flushright}
 }
+
+% Redefine a fonte para uma fonte similar a Arial (fonte Helvetica)
+\renewcommand*\familydefault{\sfdefault}
+
+% -----------------------------------------------------------------------------
+% Espaçamento entre o texto e tabelas/quadros
+% -----------------------------------------------------------------------------
+\let\oldtabular\tabular
+\renewcommand{\tabular}{\vspace{0.3cm}\oldtabular}
+
+\let\oldtable\table
+\renewcommand{\table}{\vspace{0.3cm}\oldtable}
+
+% \let\oldchapter\chapter
+% \renewcommand{\chapter}[1]{\oldchapter[#1]{\centering #1}}

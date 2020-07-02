@@ -19,9 +19,31 @@ Os arquivos das figuras devem ser armazenados no diretório de "/dados".
 
 \begin{figure}[!htb]
     \centering
-    \caption{Exemplo de Figura}
-    \includegraphics[width=0.5\textwidth]{./dados/figuras/figura1}
-    \fonte{\citeonline{IRL2014}}
+    \sbox0{\includegraphics[width=0.5\textwidth]{./dados/figuras/figura1}}% measure width
+    \begin{minipage}{\wd0}
+    \usebox0
+        \caption{Exemplo de Figura}
+        \fonte{\citeonline{IRL2014}}
+    \end{minipage}
+    \label{fig:figura-exemplo1}
+\end{figure}
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type
+specimen book. It has survived not only five centuries, but also the leap into
+electronic typesetting, remaining essentially unchanged. It was popularised in
+the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+and more recently with desktop publishing software like Aldus PageMaker
+including versions of Lorem Ipsum.
+
+\begin{figure}[!htb]
+    \sbox0{\includegraphics[width=0.5\textwidth]{./dados/figuras/figura1}}% measure width
+    \begin{minipage}{\wd0}
+    \usebox0
+        \caption{Exemplo de Figura}
+        \fonte{\citeonline{IRL2014}}
+    \end{minipage}
     \label{fig:figura-exemplo1}
 \end{figure}
 
