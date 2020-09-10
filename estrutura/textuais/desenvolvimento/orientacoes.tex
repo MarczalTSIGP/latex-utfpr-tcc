@@ -13,7 +13,7 @@ Referências cruzadas são obtidas através dos comandos \verb|\label{}| e \verb
 \chapter{FIGURAS}
 \label{chap:figuras}
 
-Exemplo de como inserir uma figura. A \autoref{fig:figura-exemplo1} aparece automaticamente na lista de figuras. Para saber mais sobre o uso de imagens no \LaTeX{} consulte literatura especializada \cite{Goossens2007}.
+Exemplo de como inserir uma figura. A \autoref{fig:figura-exemplo-1} aparece automaticamente na lista de figuras. Para saber mais sobre o uso de imagens no \LaTeX{} consulte literatura especializada \cite{Goossens2007}.
 
 Os arquivos das figuras devem ser armazenados no diretório de "/dados".
 
@@ -23,13 +23,24 @@ Os arquivos das figuras devem ser armazenados no diretório de "/dados".
     \begin{minipage}{\wd0}
     \usebox0
         \caption{Exemplo de Figura}
+        \label{fig:figura-exemplo-1}
         \fonte{\citeonline{IRL2014}}
     \end{minipage}
-    \label{fig:figura-exemplo1}
 \end{figure}
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+\begin{figure}[!htb]
+    \centering
+    \sbox0{\includegraphics[width=0.5\textwidth]{./dados/figuras/figura1}}% measure width
+    \begin{minipage}{\wd0}
+    \usebox0
+        \caption{Exemplo de Figura}
+        \label{fig:figura-exemplo-2}
+        \fonte{\citeonline{IRL2014}}
+    \end{minipage}
+\end{figure}
+
+A \autoref{fig:figura-exemplo-1} Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+A \autoref{fig:figura-exemplo-2} Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
 when an unknown printer took a galley of type and scrambled it to make a type
 specimen book. It has survived not only five centuries, but also the leap into
 electronic typesetting, remaining essentially unchanged. It was popularised in
