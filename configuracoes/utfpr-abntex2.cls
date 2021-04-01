@@ -368,6 +368,17 @@
             \large\MakeUppercase{\imprimirdata}
 	\end{SingleSpacing}
     \end{center}
+
+    \begin{center}
+        \begin{tabular}{ M{3.2cm} m{12cm} }
+            \includegraphics[scale=0.8]{./dados/figuras/by-sa.eps} \href{https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR}{4.0 Internacional}  &
+            {\small Esta licença permite remixe, adaptação e criação a partir do trabalho,
+            mesmo para fins comerciais, desde que sejam atribuídos créditos ao(s)
+            autor(es) e que licenciem as novas criações sob termos idênticos.
+            Conteúdos elaborados por terceiros, citados e referenciados nesta obra
+            não são cobertos pela licença.}\\
+        \end{tabular}
+    \end{center}
 }
 \makeatother
 
