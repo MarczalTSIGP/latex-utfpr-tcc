@@ -40,6 +40,7 @@
     a4paper,                  % Tamanho do papel.
     sumario=tradicional,      % Seleciona o sumário tradicional
 % Opções do pacote babel
+    english,
     brazil,                   % Idioma do documento
 }{abntex2}
 
